@@ -29,11 +29,11 @@ DJANGO_APPS = [
 ]
 
 CUSTOM_APPS = [
-
+    'shop',
 ]
 
 THIRD_PART_APPS = [
-
+    'ckeditor',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRD_PART_APPS
@@ -124,3 +124,16 @@ MEDIA_ROOT = BASE_DIR / 'media/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CKEDITOR_BASEPATH = "/my_static/ckeditor/ckeditor/"
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+       # 'height': 300,
+       # 'width': 300,
+    },
+}
+
+AUTH_USER_MODEL = "user.UserModel"
