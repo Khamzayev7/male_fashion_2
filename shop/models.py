@@ -7,6 +7,3 @@ from ckeditor_uploader.fields import RichTextUploadingField
 from shop.abstract import BaseModel, ActiveModel, OrderModel
 
 UserModel = get_user_model()
-
-class Category(BaseModel):
-    pass
